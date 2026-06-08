@@ -1,57 +1,58 @@
 @import "theme-light.css";
 
 :root {
-  /* Color palette */
-  --contrast-5: hsla(241, 65%, 85%, 0.06);
-  --contrast-10: hsla(241, 60%, 80%, 0.14);
-  --contrast-20: hsla(241, 64%, 82%, 0.23);
-  --contrast-30: hsla(241, 69%, 84%, 0.32);
-  --contrast-40: hsla(241, 73%, 86%, 0.41);
-  --contrast-50: hsla(241, 78%, 88%, 0.5);
-  --contrast-60: hsla(241, 82%, 90%, 0.58);
-  --contrast-70: hsla(241, 87%, 92%, 0.69);
-  --contrast-80: hsla(241, 91%, 94%, 0.8);
-  --contrast-90: hsla(241, 96%, 96%, 0.9);
+  /* Color palette (Rosé Pine) */
+  --contrast-5: rgba(224, 222, 244, 0.06);
+  --contrast-10: rgba(224, 222, 244, 0.14);
+  --contrast-20: rgba(224, 222, 244, 0.23);
+  --contrast-30: rgba(224, 222, 244, 0.32);
+  --contrast-40: rgba(224, 222, 244, 0.41);
+  --contrast-50: rgba(224, 222, 244, 0.5);
+  --contrast-60: rgba(224, 222, 244, 0.58);
+  --contrast-70: rgba(224, 222, 244, 0.69);
+  --contrast-80: rgba(224, 222, 244, 0.8);
+  --contrast-90: rgba(224, 222, 244, 0.9);
 
-  --primary-color: hsl(241, 75%, 64%);
-  --primary-color-highlight: hsl(241, 75%, 68%);
-  --primary-color-shade: hsl(241, 75%, 64%, 0.42);
+  --primary-color: #c4a7e7; /* iris */
+  --primary-color-highlight: #d0b8ed;
+  --primary-color-shade: rgba(196, 167, 231, 0.42);
 
-  --alternative-color: hsl(179, 50%, 58%);
-  --alternative-color-dark: hsl(179, 80%, 75%);
+  --alternative-color: #9ccfd8; /* foam */
+  --alternative-color-dark: #b3dbe2;
 
-  --success-color: hsl(142, 76%, 36%);
-  --success-color-highlight: hsl(142, 76%, 40%);
-  --success-color-shade: hsla(142, 76%, 36%, 0.1);
+  --success-color: #31748f; /* pine */
+  --success-color-highlight: #3a87a6;
+  --success-color-shade: rgba(49, 116, 143, 0.1);
 
-  --warning-color: hsl(38, 92%, 50%);
-  --warning-color-highlight: hsl(38, 92%, 55%);
-  --warning-color-shade: hsla(38, 92%, 50%, 0.1);
+  --warning-color: #f6c177; /* gold */
+  --warning-color-highlight: #f8ce92;
+  --warning-color-shade: rgba(246, 193, 119, 0.1);
 
-  --error-color: hsl(0, 80%, 60%);
-  --error-color-highlight: hsl(0, 72%, 60%);
-  --error-color-shade: hsla(0, 72%, 51%, 0.1);
+  --error-color: #eb6f92; /* love */
+  --error-color-highlight: #ee85a3;
+  --error-color-shade: rgba(235, 111, 146, 0.1);
 
   /* Core colors */
-  --text-color: var(--gray-300);
-  --secondary-text-color: var(--gray-400);
-  --tertiary-text-color: var(--gray-500);
+  --text-color: #e0def4; /* text */
+  --secondary-text-color: #908caa; /* subtle */
+  --tertiary-text-color: #6e6a86; /* muted */
   --contrast-text-color: #fff;
-  --primary-text-color: hsl(241, 82%, 82%);
+  --primary-text-color: #c4a7e7; /* iris */
 
   --link-color: var(--primary-text-color);
-  --secondary-link-color: hsla(241, 82%, 82%, 0.8);
+  --secondary-link-color: rgba(196, 167, 231, 0.8);
 
   --icon-color: var(--text-color);
 
   --border-color: var(--contrast-30);
   --secondary-border-color: var(--contrast-20);
 
-  --body-color: hsl(241, 15%, 14%);
+  --body-color: #191724; /* base */
   --body-color-contrast: var(--contrast-10);
+  --surface-color: #1f1d2e; /* surface */
 
   /* Focus */
-  --focus-outline: 2px solid hsl(241, 100%, 78%);
+  --focus-outline: 2px solid #c4a7e7;
   --focus-outline-offset: 2px;
 
   /* Shadows */
@@ -89,8 +90,8 @@
   --btn-font-weight: 400;
   --btn-box-shadow: var(--box-shadow-xs);
 
-  --btn-primary-bg-color: var(--primary-color);
-  --btn-primary-hover-bg-color: var(--primary-color-highlight);
+  --btn-primary-bg-color: var(--primary-button-color);
+  --btn-primary-hover-bg-color: var(--primary-button-color-highlight);
   --btn-primary-text-color: var(--contrast-text-color);
 
   --btn-success-bg-color: var(--success-color);
@@ -106,15 +107,15 @@
 }
 
 :root {
-  --modal-overlay-bg-color: hsla(229, 21%, 16%, 0.55);
-  --modal-container-bg-color: hsl(241, 20%, 20%);
+  --modal-overlay-bg-color: rgba(25, 23, 36, 0.55);
+  --modal-container-bg-color: #1f1d2e; /* surface */
   --modal-container-border-color: var(--contrast-30);
   --modal-border-radius: var(--border-radius-lg);
   --modal-box-shadow: none;
 }
 
 :root {
-  --menu-bg-color: hsl(241, 20%, 20%);
+  --menu-bg-color: #1f1d2e; /* surface */
   --menu-border-color: var(--contrast-30);
   --menu-border-radius: var(--border-radius);
   --menu-box-shadow: none;

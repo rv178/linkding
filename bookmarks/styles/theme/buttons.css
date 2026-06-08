@@ -8,8 +8,8 @@
   --btn-font-weight: 400;
   --btn-box-shadow: var(--box-shadow-xs);
 
-  --btn-primary-bg-color: var(--primary-color);
-  --btn-primary-hover-bg-color: var(--primary-color-highlight);
+  --btn-primary-bg-color: var(--primary-button-color);
+  --btn-primary-hover-bg-color: var(--primary-button-color-highlight);
   --btn-primary-text-color: var(--contrast-text-color);
 
   --btn-success-bg-color: var(--success-color);

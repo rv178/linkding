@@ -9,6 +9,10 @@
   --bulk-actions-bg-color: var(--gray-50);
 }
 
+#bookmark-list-container .empty {
+  background: var(--surface-color);
+}
+
 /* Bookmark page grid */
 .bookmarks-page {
   &.grid {

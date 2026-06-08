@@ -40,7 +40,7 @@
 
     &.active {
       & a {
-        background: var(--primary-color);
+        background: var(--primary-button-color);
         color: var(--contrast-text-color);
       }
     }

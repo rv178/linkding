@@ -29,12 +29,12 @@
     <link href="{% static 'theme-light.css' %}?v={{ app_version }}"
           rel="stylesheet"
           type="text/css" />
-    <meta name="theme-color" content="#5856e0">
+    <meta name="theme-color" content="#faf4ed">
   {% elif request.user_profile.theme == 'dark' %}
     <link href="{% static 'theme-dark.css' %}?v={{ app_version }}"
           rel="stylesheet"
           type="text/css" />
-    <meta name="theme-color" content="#161822">
+    <meta name="theme-color" content="#191724">
   {% else %}
     {# Use auto theme as fallback #}
     <link href="{% static 'theme-dark.css' %}?v={{ app_version }}"
@@ -47,10 +47,10 @@
           media="(prefers-color-scheme: light)" />
     <meta name="theme-color"
           media="(prefers-color-scheme: dark)"
-          content="#161822">
+          content="#191724">
     <meta name="theme-color"
           media="(prefers-color-scheme: light)"
-          content="#5856e0">
+          content="#faf4ed">
   {% endif %}
   {% if request.user_profile.custom_css %}
     <link href="{% url 'linkding:custom_css' %}?hash={{ request.user_profile.custom_css_hash }}"

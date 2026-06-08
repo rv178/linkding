@@ -1,58 +1,64 @@
 :root {
-  /* Color palette */
-  --gray-50: rgb(249, 250, 251);
-  --gray-100: rgb(243, 244, 246);
-  --gray-200: rgb(229, 231, 235);
-  --gray-300: rgb(209, 213, 219);
-  --gray-400: rgb(156, 163, 175);
-  --gray-500: rgb(107, 114, 128);
-  --gray-600: rgb(75, 85, 99);
-  --gray-700: rgb(55, 65, 81);
-  --gray-800: rgb(31, 41, 55);
-  --gray-900: rgb(17, 24, 39);
+  /* Color palette (Rosé Pine Dawn) */
+  --gray-50: rgb(250, 244, 237); /* base */
+  --gray-100: rgb(242, 233, 225); /* overlay */
+  --gray-200: rgb(223, 218, 217); /* highlight med */
+  --gray-300: rgb(206, 202, 205); /* highlight high */
+  --gray-400: rgb(152, 147, 165); /* muted */
+  --gray-500: rgb(121, 117, 147); /* subtle */
+  --gray-600: rgb(110, 106, 134);
+  --gray-700: rgb(87, 82, 121); /* text */
+  --gray-800: rgb(57, 53, 82);
+  --gray-900: rgb(35, 33, 54);
 
-  --primary-color: hsl(241, 63%, 59%);
-  --primary-color-highlight: hsl(241, 63%, 64%);
-  --primary-color-shade: hsl(241, 63%, 59%, 0.075);
+  --primary-color: #907aa9; /* iris */
+  --primary-color-highlight: #9d88b3;
+  --primary-color-shade: rgba(144, 122, 169, 0.075);
 
-  --alternative-color: hsl(179, 94%, 29%);
-  --alternative-color-dark: hsl(179, 94%, 22%);
+  --primary-button-color: #907aa9 ;
+  --primary-button-color-highlight: #655c8f;
 
-  --success-color: hsl(142, 76%, 36%);
-  --success-color-highlight: hsl(142, 76%, 40%);
-  --success-color-shade: hsla(142, 76%, 36%, 0.1);
+  --alternative-color: #56949f; /* foam */
+  --alternative-color-dark: #286983; /* pine */
 
-  --warning-color: hsl(38, 92%, 50%);
-  --warning-color-highlight: hsl(38, 92%, 55%);
-  --warning-color-shade: hsla(38, 92%, 50%, 0.1);
+  --success-color: #286983; /* pine */
+  --success-color-highlight: #2f7a98;
+  --success-color-shade: rgba(40, 105, 131, 0.1);
 
-  --error-color: hsl(0, 72%, 51%);
-  --error-color-highlight: hsl(0, 72%, 60%);
-  --error-color-shade: hsla(0, 72%, 51%, 0.1);
+  --warning-color: #ea9d34; /* gold */
+  --warning-color-highlight: #edaa50;
+  --warning-color-shade: rgba(234, 157, 52, 0.1);
+
+  --error-color: #b4637a; /* love */
+  --error-color-highlight: #bd7388;
+  --error-color-shade: rgba(180, 99, 122, 0.1);
 
   /* Core colors */
   --text-color: var(--gray-700);
   --secondary-text-color: var(--gray-500);
   --tertiary-text-color: var(--gray-500);
   --contrast-text-color: #fff;
-  --primary-text-color: hsl(241, 63%, 55%);
+  --primary-text-color: #907aa9; /* iris */
 
   --link-color: var(--primary-text-color);
-  --secondary-link-color: hsla(241, 63%, 54%, 0.8);
+  --secondary-link-color: rgba(144, 122, 169, 0.8);
 
   --icon-color: var(--gray-500);
 
   --border-color: var(--gray-300);
   --secondary-border-color: var(--gray-200);
 
-  --body-color: #fff;
+  --body-color: rgb(250, 244, 237); /* base */
   --body-color-contrast: var(--gray-100);
+  --surface-color: #fffaf3; /* surface */
 
   /* Fonts */
   --base-font-family:
-    -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto;
+    "JetBrains Mono", ui-monospace, -apple-system, system-ui,
+    BlinkMacSystemFont, "Segoe UI", Roboto;
   --mono-font-family:
-    "SF Mono", "Segoe UI Mono", "Roboto Mono", Menlo, Courier, monospace;
+    "JetBrains Mono", ui-monospace, "SF Mono", "Segoe UI Mono", "Roboto Mono",
+    Menlo, Courier, monospace;
   --fallback-font-family: "Helvetica Neue", sans-serif;
   --cjk-zh-hans-font-family:
     var(--base-font-family), "PingFang SC", "Hiragino Sans GB",
@@ -96,8 +102,8 @@
   --layout-spacing: var(--unit-2);
   --layout-spacing-sm: var(--unit-1);
   --layout-spacing-lg: var(--unit-4);
-  --border-radius: var(--unit-1);
-  --border-radius-lg: var(--unit-2);
+  --border-radius: 0;
+  --border-radius-lg: 0;
   --border-width: var(--unit-o);
   --border-width-lg: var(--unit-h);
   --control-size: var(--unit-8);
